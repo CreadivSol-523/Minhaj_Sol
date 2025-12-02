@@ -152,3 +152,93 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+/* Typography */
+h1 {
+  scroll-margin: 5rem;
+  font-family: "latoBlack";
+  font-weight: 900;
+  letter-spacing: 0.025em;
+  font-size: clamp(2rem, 5vw, 5rem);
+  text-wrap: balance;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+h2 {
+  scroll-margin: 5rem;
+  letter-spacing: 0.025em;
+  margin-top: 0;
+  font-size: clamp(1.5rem, 5vw, 4rem);
+  font-family: "latoBlack";
+  font-weight: 900;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+h3 {
+  scroll-margin: 5rem;
+  font-size: clamp(1.2rem, 5vw, 3rem);
+  text-wrap: balance;
+  font-family: "latoBold";
+  font-weight: 700;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  line-height: 1.25em;
+}
+
+h4 {
+  scroll-margin: 5rem;
+  font-size: clamp(1rem, 5vw, 2.5rem);
+  text-wrap: balance;
+  font-family: "latoBold";
+  font-weight: 700;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+h5 {
+  scroll-margin: 5rem;
+  font-size: clamp(0.8rem, 5vw, 2rem);
+  text-wrap: balance;
+  font-family: "latoBold";
+  font-weight: 700;
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+}
+
+p {
+  font-size: clamp(0.6rem, 4vw, 1.25rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: "samsRegular";
+  font-weight: 400;
+}
+
+ul li {
+  font-size: clamp(0.6rem, 4vw, 1rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: "samsRegular";
+  font-weight: 400;
+}
+
+small {
+  font-size: clamp(0.5rem, 4vw, 0.9rem);
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
+  font-family: "samsRegular";
+  font-weight: 400;
+}
+li {
+  font-family: "samsRegular";
+  font-weight: 400;
+}
