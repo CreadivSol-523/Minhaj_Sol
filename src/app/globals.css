@@ -153,11 +153,43 @@ body {
   }
 }
 
+@font-face {
+  font-family: "JakartaRegular";
+  src: url("/Font/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "JakartaSemiBold";
+  src: url("/Font/PlusJakartaSans-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "poopins";
+  src: url("/Font/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+}
+
+/* Fonts */
+.fontJakartaRegular {
+  font-family: "JakartaRegular";
+  font-weight: 400;
+}
+.fontJakartaSemiBold {
+  font-family: "JakartaSemiBold";
+  font-weight: 600;
+}
+.fontPoppins {
+  font-family: "poopins";
+  font-weight: 400;
+}
+
 /* Typography */
 h1 {
   scroll-margin: 5rem;
-  font-family: "latoBlack";
-  font-weight: 900;
+  font-family: "JakartaSemiBold";
+  font-weight: 600;
   letter-spacing: 0.025em;
   font-size: clamp(2rem, 5vw, 5rem);
   text-wrap: balance;
@@ -171,8 +203,8 @@ h2 {
   letter-spacing: 0.025em;
   margin-top: 0;
   font-size: clamp(1.5rem, 5vw, 4rem);
-  font-family: "latoBlack";
-  font-weight: 900;
+  font-family: "JakartaSemiBold";
+  font-weight: 600;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -182,8 +214,8 @@ h3 {
   scroll-margin: 5rem;
   font-size: clamp(1.2rem, 5vw, 3rem);
   text-wrap: balance;
-  font-family: "latoBold";
-  font-weight: 700;
+  font-family: "JakartaRegular";
+  font-weight: 400;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -194,8 +226,8 @@ h4 {
   scroll-margin: 5rem;
   font-size: clamp(1rem, 5vw, 2.5rem);
   text-wrap: balance;
-  font-family: "latoBold";
-  font-weight: 700;
+  font-family: "JakartaRegular";
+  font-weight: 400;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -205,8 +237,8 @@ h5 {
   scroll-margin: 5rem;
   font-size: clamp(0.8rem, 5vw, 2rem);
   text-wrap: balance;
-  font-family: "latoBold";
-  font-weight: 700;
+  font-family: "JakartaRegular";
+  font-weight: 400;
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -217,7 +249,7 @@ p {
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  font-family: "samsRegular";
+  font-family: "poopins";
   font-weight: 400;
 }
 
@@ -226,7 +258,7 @@ ul li {
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  font-family: "samsRegular";
+  font-family: "poopins";
   font-weight: 400;
 }
 
@@ -235,10 +267,10 @@ small {
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
-  font-family: "samsRegular";
+  font-family: "poopins";
   font-weight: 400;
 }
 li {
-  font-family: "samsRegular";
+  font-family: "poopins";
   font-weight: 400;
 }
