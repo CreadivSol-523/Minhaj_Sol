@@ -5,21 +5,20 @@
 
 /* -----Custom Colors----- */
 @theme {
-  /* Static Backgrounds */
-  --color-primaryBG: #0e0e1b;
-  --color-staticSecondaryBG: #262631;
-  --color-CardBG: #7165d2;
-
-  /* Gradient Backgrounds */
-  --gradient-secondary-bg: linear-gradient(to bottom left, #5848c8 0%, #7165d2 100%);
-
   /* Gradient Heading or Text Colors   */
-  --gradient-heading: linear-gradient(to bottom, #ffffff 0%, #7165d2 100%);
+  --gradient-secondary-bg: linear-gradient(to bottom, #186dbf 0%, #0e579d 100%);
 
   /* Static Heading or Text Colors   */
-  --color-headingColor: #8779ed;
-  --color-textColor: #dadada;
+  --color-headingColor: #262b3f;
+  --color-textColor: #000000bf;
+  --color-textBlue: #186dbf;
   --color-white: #ffffff;
+}
+
+@layer utilities {
+  .bg-gradient-secondary {
+    background: var(--gradient-secondary-bg);
+  }
 }
 
 html,
@@ -245,7 +244,7 @@ h5 {
 }
 
 p {
-  font-size: clamp(0.6rem, 4vw, 1.25rem);
+  font-size: clamp(0.5rem, 4vw, 1.15rem);
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;
@@ -263,7 +262,7 @@ ul li {
 }
 
 small {
-  font-size: clamp(0.5rem, 4vw, 0.9rem);
+  font-size: clamp(0.4rem, 4vw, 0.8rem);
   word-break: break-word;
   overflow-wrap: break-word;
   white-space: normal;

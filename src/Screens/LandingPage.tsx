@@ -1,100 +1,47 @@
 import MainLayout from "@/Layout/MainLayout";
-import bulb from "../../public/Images/home/bulb.png";
-import Image from "next/image";
+import Footer from "@/components/Footer/Footer";
+import ChooseUSSection from "@/components/LandingPageComp/ChooseUSSection/ChooseUSSection";
+import ContactForm from "@/components/LandingPageComp/ContactForm/ContactForm";
+import HeroSection from "@/components/LandingPageComp/HeroSection/HeroSection";
+import OurClientsSection from "@/components/LandingPageComp/OurClientsSection/OurClientsSection";
+import OurExpertiseSection from "@/components/LandingPageComp/OurExpertiseSection/OurExpertiseSection";
+import OurStackSection from "@/components/LandingPageComp/OurStackSection/OurStackSection";
+import ServiceSection from "@/components/LandingPageComp/ServiceSection/ServiceSection";
 
 export default function LandingPage() {
   return (
-    <MainLayout>
+    <MainLayout fixedHead>
       {/* Header */}
 
       {/* Hero Section */}
-      <section className="grid grid-cols-2 h-[87vh] overflow-hidden px-80">
-        <div className=" mx-auto flex justify-center items-center">
-          {/* LEFT CONTENT */}
-          <div className="pt-10 ">
-            <h2 className="text-[#0F1D37] leading-tight mb-8">
-              We Provide <br />
-              Smart Business <br />
-              Solutions
-            </h2>
-
-            <div className="flex gap-4 mb-10">
-              <div className="w-1 bg-[#1A73D9] rounded" />
-              <p className="text-[#1E2A3B] text-lg max-w-xl">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ab illo inventore.</p>
-            </div>
-
-            <button className="bg-[#186DBF] text-white px-8 py-3 rounded-md hover:bg-blue-700 transition">Get In Touch</button>
-          </div>
-        </div>
-
-        {/* RIGHT BULB IMAGE */}
-        <Image src={bulb} alt="Bulb" className="w-400 h-400 object-cover left-[30%] -top-[50%] absolute z-10" width={1000} height={1000} />
-      </section>
-
-      {/* Blue Banner */}
-      <div className="bg-blue-600 text-white py-2 sm:py-3 z-20 relative">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs sm:text-sm font-medium">Our Services & Capabilities</p>
-        </div>
-      </div>
+      <HeroSection />
 
       {/* Mission Statement */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-white">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 text-center mb-8 sm:mb-12 leading-tight">
-            Empowering Our Worldwide Clients To Adopt
-            <br className="hidden sm:block" />
-            Cutting-Edge Technology, Reimagine
-            <br className="hidden sm:block" />
-            Processes, And Enhance Experiences
-          </h2>
-
-          {/* Services Grid */}
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8 mt-12 sm:mt-16">
-            <ServiceCard title="GLOBAL MARKETING" description="Reach global audiences with data-driven marketing strategies tailored to your business needs." />
-            <ServiceCard title="LEADERSHIP" description="Develop strong leadership capabilities through comprehensive training and coaching programs." />
-            <ServiceCard title="WEB DEVELOPMENT" description="Build modern, responsive websites that deliver exceptional user experiences and drive results." />
-            <ServiceCard title="DATA ONLINE TRAINING" description="Upskill your team with cutting-edge online training programs in data science and analytics." />
-            <ServiceCard title="AGILE + DEVOPS" description="Streamline development with agile methodologies and DevOps best practices for faster delivery." />
-            <ServiceCard title="PRIVACY DESIGN BY OPERATION" description="Build privacy and security into every aspect of your operations from the ground up." />
-          </div>
-        </div>
-      </section>
+      <ServiceSection />
 
       {/* Tech Stack */}
-      <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-8 sm:mb-12">Our Tech Stack</h2>
+      <OurStackSection />
 
-          {/* First Row */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 mb-6 sm:mb-8">
-            <TechIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fb/Adobe_Illustrator_CC_icon.svg/1200px-Adobe_Illustrator_CC_icon.svg.png" alt="Adobe" />
-            <TechIcon src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/261_Php_logo-512.png" alt="PHP" />
-            <TechIcon src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/97_Docker_logo_logos-512.png" alt="Docker" />
-            <TechIcon src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/233_Node_Js_logo-512.png" alt="Node" />
-            <TechIcon src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1024px-Amazon_Web_Services_Logo.svg.png" alt="AWS" />
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/mongodb-icon-1.svg" alt="MongoDB" />
-          </div>
+      {/* Why Choose Us */}
+      <ChooseUSSection />
 
-          {/* Second Row */}
-          <div className="grid grid-cols-3 sm:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8">
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="HTML5" />
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/css-3.svg" alt="CSS3" />
-            <TechIcon src="https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-512.png" alt="React" />
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/javascript-1.svg" alt="JavaScript" />
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/redux.svg" alt="Redux" />
-            <TechIcon src="https://cdn.worldvectorlogo.com/logos/angular-icon-1.svg" alt="Angular" />
-          </div>
-        </div>
-      </section>
+      {/* Our Expertise */}
+      <OurExpertiseSection />
 
-      {/* Stats & Description */}
+      {/* Our Clients */}
+      <OurClientsSection />
+
+      {/*Contact US */}
+      <ContactForm />
+      {/*Footer */}
+      <Footer />
+
+      {/* Stats & Description
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-900 mb-3 sm:mb-4">Transforming Technology</h2>
           <p className="text-xl sm:text-2xl lg:text-3xl text-center text-blue-600 font-semibold mb-12 sm:mb-16">Into A Beneficial Asset</p>
 
-          {/* Stats Grid */}
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-12 sm:mb-16">
             <StatCard number="500+" label="Happy Clients" accent="blue" />
             <StatCard number="500+" label="Projects Done" accent="blue" />
@@ -106,7 +53,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Who We Work With */}
       <section className="py-12 sm:py-16 lg:py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-12 sm:mb-16">Who We Work With</h2>
@@ -119,12 +65,10 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Satisfied Clients */}
       <section className="py-12 sm:py-16 lg:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl sm:text-3xl font-bold text-center text-gray-900 mb-12 sm:mb-16">Our Satisfied Clients</h2>
 
-          {/* First Row */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 lg:gap-12 mb-6 sm:mb-8 lg:mb-12">
             <ClientLogo name="Microsoft" />
             <ClientLogo name="AWS" />
@@ -132,7 +76,6 @@ export default function LandingPage() {
             <ClientLogo name="Tektronix" />
           </div>
 
-          {/* Second Row */}
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-8 lg:gap-12">
             <ClientLogo name="SAP" />
             <ClientLogo name="Teradata" />
@@ -142,7 +85,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
       <section className="relative py-16 sm:py-20 lg:py-24 bg-gradient-to-br from-blue-600 via-blue-700 to-blue-800 text-white overflow-hidden">
         <div className="absolute inset-0 opacity-10">
           <div className="absolute right-0 top-0 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -159,7 +101,6 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="bg-gray-900 text-gray-300 py-12 sm:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
@@ -254,17 +195,8 @@ export default function LandingPage() {
             <p className="text-xs sm:text-sm text-gray-400">© 2024 MSS Solutions. All rights reserved. | Privacy Policy | Terms of Service</p>
           </div>
         </div>
-      </footer>
+      </footer> */}
     </MainLayout>
-  );
-}
-
-function ServiceCard({ title, description }: { title: string; description: string }) {
-  return (
-    <div className="bg-white p-4 sm:p-6 rounded-lg border border-gray-200 hover:shadow-lg transition">
-      <h3 className="text-xs sm:text-sm font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">{title}</h3>
-      <p className="text-xs sm:text-sm text-gray-600 leading-relaxed">{description}</p>
-    </div>
   );
 }
 

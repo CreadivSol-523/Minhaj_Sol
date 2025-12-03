@@ -3,9 +3,5 @@ import styles from "./page.module.css";
 import LandingPage from "../Screens/LandingPage";
 
 export default function Home() {
-  return (
-    <div className={styles.page}>
-      <LandingPage />
-    </div>
-  );
+  return <LandingPage />;
 }
