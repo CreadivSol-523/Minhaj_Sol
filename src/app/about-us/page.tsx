@@ -5,7 +5,6 @@ import ServiceOverviewSection from "@/components/AboutComp/ServiceOverviewSectio
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/LandingPageComp/ContactForm/ContactForm";
 import OurClientsSection from "@/components/LandingPageComp/OurClientsSection/OurClientsSection";
-import ServiceSection from "@/components/LandingPageComp/ServiceSection/ServiceSection";
 import MainLayout from "@/Layout/MainLayout";
 import { Phone } from "lucide-react";
 import React from "react";

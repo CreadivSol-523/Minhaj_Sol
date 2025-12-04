@@ -1,10 +1,10 @@
 import Image from "next/image";
-import React from "react";
+import React, { CSSProperties } from "react";
 
-const ServiceOverviewSection = () => {
+const ServiceOverviewSection = ({ style }: { style?: CSSProperties }) => {
   return (
     <section className="py-12 sm:py-16 lg:py-20 bg-white px-80">
-      <div className="items-center justify-center grid grid-cols-2 gap-20">
+      <div className="items-center justify-center grid grid-cols-2 gap-20" style={style}>
         <div className="flex flex-col gap-8 col-span-1">
           <div className="flex flex-col ">
             <h6 className="uppercase text-textBlue text-start fontJakartaSemiBold text-xl">About us</h6>

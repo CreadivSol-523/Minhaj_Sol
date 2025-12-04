@@ -1,5 +1,6 @@
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";
 import ServiceOverviewSection from "@/components/AboutComp/ServiceOverviewSection/ServiceOverviewSection";
+import Accordion from "@/components/Accordion/Accordion";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/LandingPageComp/ContactForm/ContactForm";
 import OurClientsSection from "@/components/LandingPageComp/OurClientsSection/OurClientsSection";
@@ -13,10 +14,16 @@ const page = () => {
   return (
     <MainLayout>
       <HeroSection heading="UI/UX DESIGN" />
-      <ServiceOverviewSection />
+      <ServiceOverviewSection
+        style={{
+          display: "flex",
+          flexDirection: "row-reverse",
+        }}
+      />
       <ServiceSection heading="Related Service" />
       <ProcedureSection />
       <OurStackSection />
+      <Accordion />
       <OurClientsSection />
       <ContactForm />
       <Footer />

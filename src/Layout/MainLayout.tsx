@@ -26,7 +26,7 @@ const MainLayout = ({ children, fixedHead }: { children?: ReactNode; fixedHead?:
             Resources ▼
           </Link>
           <Link href="/contact-us" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
-            Careers
+            Contact
           </Link>
         </nav>
         <Button name="Contact" style={{ paddingBlock: "0.5rem", paddingInline: "2rem" }} onClick={() => router.push("/contact-us")} />
