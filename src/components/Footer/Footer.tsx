@@ -5,8 +5,8 @@ import Button from "../Button/Button";
 
 const Footer = () => {
   return (
-    <section className="bg-[#186DBF]/10 flex flex-col gap-16 px-80 pb-3 pt-16">
-      <div className="grid grid-cols-4">
+    <section className="bg-[#186DBF]/10 flex flex-col gap-16 2xl:px-80 xl:px-40 px-10 pb-3 pt-16">
+      <div className="grid lg:grid-cols-4 min-[850px]:grid-cols-3 sm:grid-cols-2 grid-cols-1 max-[850px]:gap-10">
         <div className="col-span-1 gap-4 flex flex-col">
           <Image src={"/Images/Logo.png"} alt="Logo" width={100} height={100} />
           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam</p>
@@ -45,7 +45,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center">
+      <div className="flex min-[900px]:flex-row flex-col justify-between items-center">
         <p>Copyright © 2025 Minhaj Solutions</p>
         <span className="flex items-center gap-1">
           <p>All Rights Reserved</p>

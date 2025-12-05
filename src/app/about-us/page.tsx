@@ -12,23 +12,23 @@ import React from "react";
 const page = () => {
   return (
     <MainLayout>
-      {/* Hero Section */}
-      <HeroSection heading="About Us" />
+      <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
+        {/* Hero Section */}
+        <HeroSection heading="About Us" />
+        {/* Service Overview */}
+        <ServiceOverviewSection />
 
-      {/* Service Overview */}
-      <ServiceOverviewSection />
+        {/* Core Value */}
+        <CoreValuesSection />
 
-      {/* Core Value */}
-      <CoreValuesSection />
+        {/* Choose us */}
+        <ChooseUSSection />
 
-      {/* About us */}
-      <ChooseUSSection />
-
-      {/* Clients */}
-      <OurClientsSection />
-
-      {/* Contact Us */}
-      <ContactForm />
+        {/* Clients */}
+        <OurClientsSection />
+        {/* Contact Us */}
+        <ContactForm />
+      </div>
 
       <Footer />
     </MainLayout>

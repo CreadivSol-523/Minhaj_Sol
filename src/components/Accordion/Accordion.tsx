@@ -7,7 +7,7 @@ const Accordion = () => {
   const [accordion, setAccordion] = useState<number | null>();
 
   return (
-    <section className="py-12 sm:py-16 lg:py-20 z-20 relative  bg-[url('/Images/home/ServiceSection.png')] bg-no-repeat bg-center bg-cover px-80 flex items-center flex-col gap-6 justify-center">
+    <section className="py-12 sm:py-16 lg:py-20 z-20 relative  bg-[url('/Images/home/ServiceSection.png')] bg-no-repeat bg-center bg-cover 2xl:px-80 xl:px-40 px-5 flex items-center flex-col gap-6 justify-center">
       <div className="flex flex-col gap-10">
         <div>
           <h6 className="uppercase text-textColor text-center fontJakartaSemiBold text-xl">faq’s</h6>

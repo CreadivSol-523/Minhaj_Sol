@@ -13,19 +13,23 @@ import React from "react";
 const page = () => {
   return (
     <MainLayout>
-      <HeroSection heading="UI/UX DESIGN" />
-      <ServiceOverviewSection
-        style={{
-          display: "flex",
-          flexDirection: "row-reverse",
-        }}
-      />
-      <ServiceSection heading="Related Service" />
-      <ProcedureSection />
-      <OurStackSection />
-      <Accordion />
-      <OurClientsSection />
-      <ContactForm />
+      <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
+        <HeroSection heading="UI/UX DESIGN" />
+        <ServiceOverviewSection
+          style={{
+            display: "flex",
+            flexDirection: "row-reverse",
+          }}
+        />
+        <ServiceSection heading="Related Service" />
+      </div>
+      <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
+        <ProcedureSection />
+        <OurStackSection />
+        <Accordion />
+        <OurClientsSection />
+        <ContactForm />
+      </div>
       <Footer />
     </MainLayout>
   );

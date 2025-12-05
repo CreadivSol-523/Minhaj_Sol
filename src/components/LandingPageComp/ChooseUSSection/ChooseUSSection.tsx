@@ -1,10 +1,9 @@
 import Image from "next/image";
-import React from "react";
 
 const ChooseUSSection = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 bg-white px-80">
-      <div className="flex items-center justify-center">
+    <section className=" bg-white 2xl:px-80 xl:px-40 px-5">
+      <div className="flex lg:flex-row flex-col lg:items-center items-start justify-center">
         <div className="flex flex-col gap-8 ">
           <div className="flex flex-col ">
             <h6 className="uppercase text-textBlue text-start fontJakartaSemiBold text-xl">Why choose us</h6>
@@ -17,8 +16,8 @@ const ChooseUSSection = () => {
             </p>
           </div>
         </div>
-        <Image src={"/Images/home/ChooseUsLine.png"} alt="Choose Us" className="object-contain h-100 w-20" width={100} height={100} />
-        <div className="flex flex-wrap gap-10 pl-20">
+        <Image src={"/Images/home/ChooseUsLine.png"} alt="Choose Us" className="object-contain h-100 w-20 lg:flex hidden" width={100} height={100} />
+        <div className="lg:flex lg:flex-wrap grid grid-cols-2 gap-10 lg:pl-20 ">
           <span className="text-textBlue">
             <h2>500+</h2>
             <p>Projects Delivered</p>

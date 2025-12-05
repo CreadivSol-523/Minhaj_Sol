@@ -8,9 +8,11 @@ import React from "react";
 const page = () => {
   return (
     <MainLayout>
-      <HeroSection heading="Case Study" />
-      <Portfolio />
-      <ContactForm />
+      <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
+        <HeroSection heading="Case Study" />
+        <Portfolio />
+        <ContactForm />
+      </div>
       <Footer />
     </MainLayout>
   );
