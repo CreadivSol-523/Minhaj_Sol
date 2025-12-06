@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";
 import Portfolio from "@/components/CaseStudyComp/Portfolio/Portfolio";
 import Footer from "@/components/Footer/Footer";

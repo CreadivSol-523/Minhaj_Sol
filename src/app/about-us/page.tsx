@@ -1,3 +1,5 @@
+"use client";
+
 import ChooseUSSection from "@/components/AboutComp/ChooseUsSection/ChooseUSSection";
 import CoreValuesSection from "@/components/AboutComp/CoreValuesSection/CoreValuesSection";
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";

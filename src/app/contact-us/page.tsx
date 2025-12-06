@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";
 import Footer from "@/components/Footer/Footer";
 import ContactForm from "@/components/LandingPageComp/ContactForm/ContactForm";

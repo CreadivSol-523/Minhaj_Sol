@@ -12,7 +12,7 @@ const Header = ({ fixedHead }: { fixedHead?: boolean }) => {
 
   return (
     <>
-      <header className={`${fixedHead ? "absolute top-0 z-50" : ""} border-gray-200 w-full 2xl:px-85 sm:px-40 px-10 h-20 flex items-center justify-between `}>
+      <header className={`${fixedHead ? "absolute top-0 z-50" : "z-50 relative"} border-gray-200 w-full 2xl:px-85 sm:px-40 px-10 h-20 flex items-center justify-between `}>
         <Image src={"/Images/Logo.png"} alt="Logo" width={80} height={80} />
         <nav className="hidden lg:flex space-x-6 xl:space-x-8">
           <Link href="/" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
@@ -61,7 +61,7 @@ const Header = ({ fixedHead }: { fixedHead?: boolean }) => {
 
         <Button name="Contact" style={{ paddingBlock: "0.5rem", paddingInline: "2rem" }} onClick={() => router.push("/contact-us")} className="flex lg:hidden" />
       </div>
-      <div className={`h-screen w-full bg-black/15 absolute right-0 top-0 ${isSidebar ? "z-40 opacity-100" : "z-0 opacity-0"} transition-all duration-500`} />
+      <div className={`h-screen w-full lg:hidden flex bg-black/15 absolute right-0 top-0 ${isSidebar ? "z-40 opacity-100" : "z-0 opacity-0"} transition-all duration-500`} />
     </>
   );
 };

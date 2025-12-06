@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";
 import ServiceOverviewSection from "@/components/AboutComp/ServiceOverviewSection/ServiceOverviewSection";
 import Accordion from "@/components/Accordion/Accordion";

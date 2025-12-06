@@ -1,3 +1,5 @@
+"use client";
+
 import HeroSection from "@/components/AboutComp/HeroSection/HeroSection";
 import BlogCard from "@/components/BlogCard/BlogCard";
 import Footer from "@/components/Footer/Footer";
