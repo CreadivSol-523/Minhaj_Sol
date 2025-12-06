@@ -11,7 +11,7 @@ const OurExpertiseSection = () => {
       </div>
       <div className="px-4 py-6 bg-[#000000]/2  2xl:ml-80 xl:ml-40 ml-0 flex gap-10 overflow-x-scroll">
         {Array.from({ length: 10 }).map((_, i) => (
-          <div className="flex min-w-[300px]  bg-white px-4 py-6 border-t-2 border-t-textBlue" key={i}>
+          <div className="flex min-w-[400px]  bg-white px-4 py-6 border-t-2 border-t-textBlue" key={i}>
             <div className="flex flex-col gap-4">
               <h6 className="text-xl fontJakartaSemiBold">Enterprises</h6>
               <small>Providing technical support, network setup, software installation.</small>

@@ -36,7 +36,7 @@ const Header = ({ fixedHead }: { fixedHead?: boolean }) => {
 
         <Menu className="lg:hidden flex" onClick={() => setIsSidebar(true)} />
       </header>
-      <div className={`h-screen w-80 bg-white absolute  top-0  rounded-tl-lg rounded-bl-2xl px-5 py-9 flex flex-col gap-10 transition-all duration-500  ${isSidebar ? "z-50 right-0" : "-right-100 z-0"}`}>
+      <div className={`h-screen w-80 bg-white absolute  top-0  rounded-tl-lg rounded-bl-2xl px-5 py-9 flex flex-col gap-10 transition-all duration-500  ${isSidebar ? "z-50 right-0 " : "-right-full z-0"}`}>
         <div className="flex items-center justify-between">
           <Image src={"/Images/Logo.png"} alt="Logo" width={80} height={80} />
           <CircleX className="cursor-pointer" onClick={() => setIsSidebar(false)} />

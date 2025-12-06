@@ -12,7 +12,7 @@ export default function LandingPage() {
   return (
     <MainLayout fixedHead>
       {/* Hero Section */}
-      <HeroSection />
+      {/* <HeroSection /> */}
 
       <div className="flex flex-col lg:gap-28 md:gap-20 gap-14">
         {/* Mission Statement */}
