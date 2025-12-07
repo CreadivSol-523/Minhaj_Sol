@@ -4,7 +4,13 @@ import React, { ReactNode } from "react";
 import { useRouter } from "next/navigation";
 import Header from "@/components/Header/Header";
 
-const MainLayout = ({ children, fixedHead }: { children?: ReactNode; fixedHead?: boolean }) => {
+const MainLayout = ({
+  children,
+  fixedHead,
+}: {
+  children?: ReactNode;
+  fixedHead?: boolean;
+}) => {
   return (
     <div className="min-h-screen bg-white">
       <Header fixedHead={fixedHead} />
