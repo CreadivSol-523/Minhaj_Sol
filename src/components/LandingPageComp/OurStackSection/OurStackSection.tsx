@@ -8,9 +8,11 @@ import "swiper/css/free-mode";
 
 const techImages = [
   "/Images/home/Stacks/TechIcon1.png",
+  "/Images/home/Stacks/TechIcon2.png",
   "/Images/home/Stacks/TechIcon3.png",
   "/Images/home/Stacks/TechIcon4.png",
   "/Images/home/Stacks/TechIcon5.png",
+  "/Images/home/Stacks/TechIcon6.png",
   "/Images/home/Stacks/TechIcon7.png",
   "/Images/home/Stacks/TechIcon8.png",
   "/Images/home/Stacks/TechIcon9.png",
