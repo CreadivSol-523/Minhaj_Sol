@@ -34,7 +34,7 @@ export default function OurStackSection() {
             grabCursor={true}
             freeMode={{
               enabled: true,
-              momentum: false,
+              momentum: true,
             }}
             autoplay={{
               delay: 0,

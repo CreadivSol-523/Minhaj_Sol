@@ -36,6 +36,12 @@ body {
   box-sizing: border-box;
 }
 
+/* Make swiper move like perfect marquee */
+.swiper-wrapper {
+  transition-timing-function: linear !important;
+}
+
+
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
