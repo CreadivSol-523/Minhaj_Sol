@@ -13,7 +13,7 @@ const page = () => {
     <MainLayout>
       <div className="flex flex-col">
         <HeroSection heading="Case Study" />
-        {/* <CaseStudies /> */}
+        <CaseStudies />
         <Portfolio />
         <ContactForm />
       </div>
