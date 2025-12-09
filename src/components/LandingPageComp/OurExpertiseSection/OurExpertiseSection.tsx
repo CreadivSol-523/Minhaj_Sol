@@ -15,11 +15,10 @@ const OurExpertiseSection = () => {
   const swiperRef = useRef(null);
 
   return (
-    <section className="bg-white flex flex-col md:gap-16 gap-10 max-lg:pb-10 xl:pl-44 md:pl-10 px-2 relative">
+    <section className="bg-white flex flex-col md:gap-5 gap-5 max-lg:pb-10 xl:pl-44 md:pl-10 px-2 relative">
       <div className="flex items-center justify-between sm:flex-row flex-col ">
         <div className="flex flex-col max-sm:items-start max-sm:w-full">
-          <h6 className="uppercase text-textBlue text-start fontJakartaSemiBold text-xl">Our Expertise</h6>
-          <h3>Who We Work With?</h3>
+          <h3>Testimonials</h3>
         </div>
         {/* Left/Right fade overlays */}
         <div className=" z-50 flex gap-2 mr-10 max-sm:justify-end max-sm:w-full">

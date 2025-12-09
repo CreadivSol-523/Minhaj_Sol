@@ -20,7 +20,7 @@ export default function LandingPage() {
         <OurService />
 
         {/* Mission Statement */}
-        <ServiceSection />
+        <ServiceSection heading="Our Industries" />
 
         {/* Tech Stack */}
         <OurStackSection />
