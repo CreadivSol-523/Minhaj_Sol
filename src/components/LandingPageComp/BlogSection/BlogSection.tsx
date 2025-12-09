@@ -14,7 +14,7 @@ const BlogSection = () => {
         <Swiper modules={[Autoplay, FreeMode]} slidesPerView={"auto"} spaceBetween={24} grabCursor={true} className="w-full flex">
           {Array.from({ length: 10 }).map((_, i) => (
             <SwiperSlide key={i} className="w-auto! flex justify-center items-center">
-              <BlogCard className="w-100 flex flex-col gap-2 border border-gray-200 gap-6 p-4" />
+              <BlogCard className="w-100 flex flex-col  border border-gray-200 gap-6 p-4" />
             </SwiperSlide>
           ))}
         </Swiper>

@@ -86,11 +86,11 @@ const OurExpertiseSection = () => {
                 </div>
 
                 <div className="absolute top-10 right-10 flex items-center gap-1">
-                  <Image src={"/Images/Home/star.png"} alt="star" width={18} height={18} />
-                  <Image src={"/Images/Home/star.png"} alt="star" width={18} height={18} />
-                  <Image src={"/Images/Home/star.png"} alt="star" width={18} height={18} />
-                  <Image src={"/Images/Home/star.png"} alt="star" width={18} height={18} />
-                  <Image src={"/Images/Home/star.png"} alt="star" width={18} height={18} />
+                  <Image src={"/Images/home/star.png"} alt="star" width={18} height={18} />
+                  <Image src={"/Images/home/star.png"} alt="star" width={18} height={18} />
+                  <Image src={"/Images/home/star.png"} alt="star" width={18} height={18} />
+                  <Image src={"/Images/home/star.png"} alt="star" width={18} height={18} />
+                  <Image src={"/Images/home/star.png"} alt="star" width={18} height={18} />
                 </div>
               </div>
             </SwiperSlide>
