@@ -4,12 +4,12 @@ import Image from "next/image";
 
 const HeroSection = () => {
   return (
-    <section className=" h-screen overflow-hidden relative">
-      <div className="grid grid-cols-2 px-80 h-full">
+    <section className="xl:h-screen lg:h-[115vh] h-[80vh] overflow-hidden relative">
+      <div className="grid lg:grid-cols-2 grid-cols-1 justify-start  2xl:px-32 sm:px-16 px-10 h-full relative z-20">
         <div className=" mx-auto flex justify-center items-center">
           {/* LEFT CONTENT */}
           <div className="pt-10 ">
-            <h2 className="text-headingColor leading-tight mb-8">
+            <h2 className="text-white leading-tight mb-8">
               We Provide <br />
               Smart Business <br />
               Solutions
@@ -17,7 +17,7 @@ const HeroSection = () => {
 
             <div className="flex gap-4 mb-10">
               <div className="w-0.5 bg-[#1A73D9] rounded" />
-              <p className="text-textColor text-lg max-w-xl">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ab illo inventore.</p>
+              <p className="text-[#FFFFFF] text-lg max-w-xl">Sed ut perspiciatis unde omnis iste natus error voluptatem accusantium doloremque laudantium totam rem aperiam eaque ab illo inventore.</p>
             </div>
 
             <Button name="Get In Touch" />
@@ -25,8 +25,8 @@ const HeroSection = () => {
         </div>
 
         {/* RIGHT BULB IMAGE */}
-        <Image src={"/Images/home/bulb.png"} alt="Bulb" className="w-450 h-450 object-cover left-[25%] -top-[55%] absolute z-10" width={1000} height={1000} />
       </div>
+      <Image src={"/Images/home/HeroBG.png"} alt="Bulb" className="w-full h-full lg:object-fill object-cover top-0 absolute z-10" width={2000} height={2000} />
 
       <div className="bg-gradient-secondary text-white  z-20  justify-center flex py-6 absolute bottom-0 w-full">
         <div className=" flex items-center gap-10">

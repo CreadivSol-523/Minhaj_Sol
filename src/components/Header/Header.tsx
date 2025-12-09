@@ -12,29 +12,29 @@ const Header = ({ fixedHead }: { fixedHead?: boolean }) => {
 
   return (
     <>
-      <header className={`${fixedHead ? "absolute top-0 z-50" : "z-50 relative"} border-gray-200 w-full 2xl:px-85 sm:px-40 px-10 h-20 flex items-center justify-between `}>
+      <header className={`${fixedHead ? "absolute top-0 z-50" : "z-50 relative"} border-gray-200 w-full 2xl:px-56 sm:px-16 px-10 h-20 flex items-center justify-between `}>
         <Image src={"/Images/Logo.png"} alt="Logo" width={80} height={80} />
         <nav className="hidden lg:flex space-x-6 xl:space-x-8">
-          <Link href="/" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
+          <Link href="/" className="text-sm text-white hover:text-textBlue transition fontJakartaSemiBold">
             Home
           </Link>
-          <Link href="/about-us" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
+          <Link href="/about-us" className="text-sm text-white hover:text-textBlue transition fontJakartaSemiBold">
             About
           </Link>
-          <Link href="/service/123" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
+          <Link href="/service/123" className="text-sm text-white hover:text-textBlue transition fontJakartaSemiBold">
             Services
           </Link>
-          <Link href="#" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
+          <Link href="#" className="text-sm text-white hover:text-textBlue transition fontJakartaSemiBold">
             Resources ▼
           </Link>
-          <Link href="/contact-us" className="text-sm text-gray-700 hover:text-textBlue transition fontJakartaSemiBold">
+          <Link href="/contact-us" className="text-sm text-white hover:text-textBlue transition fontJakartaSemiBold">
             Contact
           </Link>
         </nav>
 
         <Button name="Contact" style={{ paddingBlock: "0.5rem", paddingInline: "2rem" }} onClick={() => router.push("/contact-us")} className="lg:flex hidden" />
 
-        <Menu className="lg:hidden flex" onClick={() => setIsSidebar(true)} />
+        <Menu className="lg:hidden flex text-white" onClick={() => setIsSidebar(true)} />
       </header>
       <div className={`h-screen w-80 bg-white absolute  top-0  rounded-tl-lg rounded-bl-2xl px-5 py-9 flex flex-col gap-10 transition-all duration-500  ${isSidebar ? "z-50 right-0 " : "-right-full z-0"}`}>
         <div className="flex items-center justify-between">
