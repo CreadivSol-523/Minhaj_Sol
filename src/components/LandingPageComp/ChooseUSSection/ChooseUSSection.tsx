@@ -17,7 +17,7 @@ const ChooseUSSection = () => {
           </div>
         </div>
         <Image src={"/Images/home/ChooseUsLine.png"} alt="Choose Us" className="object-contain h-100 w-20 lg:flex hidden" width={100} height={100} />
-        <div className="lg:flex lg:flex-wrap grid grid-cols-2 gap-10 lg:pl-20 ">
+        <div className="lg:flex lg:flex-wrap grid grid-cols-2 sm:gap-10 gap-4 lg:pl-20 ">
           <span className="text-textBlue">
             <h2>500+</h2>
             <p>Projects Delivered</p>

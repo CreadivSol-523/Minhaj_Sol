@@ -68,16 +68,18 @@ const OurExpertiseSection = () => {
             (swiperRef as any).current = swiper;
           }}
           slidesPerView={"auto"}
+          slidesPerGroup={1}
+          slidesPerGroupAuto={false}
           spaceBetween={24}
           grabCursor={true}
-          freeMode={{ enabled: true, momentum: false }}
+          freeMode={false}
           pagination={{ clickable: true }}
           navigation={{ prevEl: prevRef.current, nextEl: nextRef.current }}
           className="w-full"
         >
           {Array.from({ length: 10 }).map((_, i) => (
             <SwiperSlide key={i} className="w-auto! flex justify-center items-center relative">
-              <div className="group flex min-w-[400px] w-100 bg-white px-4 py-6 border-2 rounded-sm border-gray-200 items-center gap-6">
+              <div className="group flex sm:w-[400px] w-[95vw] bg-white px-4 py-6 border-2 rounded-sm border-gray-200 items-center gap-6">
                 <div className="flex flex-col gap-2">
                   <Image src={"/Images/home/Human.png"} alt="Review 1" width={25} height={25} quality={100} className="rounded-full  w-10 h-auto" />
                   <h6 className="text-xl fontJakartaSemiBold">Floyd Miles</h6>
