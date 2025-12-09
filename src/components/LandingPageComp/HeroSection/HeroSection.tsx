@@ -5,7 +5,7 @@ import Image from "next/image";
 const HeroSection = () => {
   return (
     <section className="xl:h-screen lg:h-[115vh] h-[80vh] overflow-hidden relative">
-      <div className="grid lg:grid-cols-2 grid-cols-1 justify-start  2xl:px-32 sm:px-16 px-10 h-full relative z-20">
+      <div className="grid lg:grid-cols-2 grid-cols-1 justify-start  2xl:px-32 sm:px-16 px-4 h-full relative z-20">
         <div className=" mx-auto flex justify-center items-center">
           {/* LEFT CONTENT */}
           <div className="pt-10 ">
