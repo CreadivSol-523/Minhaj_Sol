@@ -3,7 +3,7 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <section className="py-12 sm:py-16 lg:py-20 z-20 relative bg-[url('/Images/home/ServiceSection.png')] bg-no-repeat bg-center bg-cover 2xl:px-80 lg:px-40 px-10">
+    <section className="py-12 sm:py-16 lg:py-20 z-20 relative bg-[url('/Images/home/ServiceSection.png')] bg-no-repeat bg-center bg-cover xl:px-44 md:px-10 px-2">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <div className="flex flex-col gap-8  col-span-1 justify-center">
           <div className="flex flex-col ">

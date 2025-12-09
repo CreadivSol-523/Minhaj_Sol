@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const ChooseUSSection = () => {
   return (
-    <section className=" bg-white 2xl:px-80 xl:px-40 px-5">
+    <section className=" bg-white xl:px-44 md:px-10 px-2">
       <div className="flex lg:flex-row flex-col lg:items-center items-start justify-center">
         <div className="flex flex-col gap-8 ">
           <div className="flex flex-col ">
